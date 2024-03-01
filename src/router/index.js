@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import TheSorting from '../views/TheSorting.vue'
 
 const routes = [
   {
@@ -7,6 +8,12 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+
+  {
+    path: '/sorting',
+    name: 'sorting',
+    component: TheSorting
+  }
 
   // {
   //   path: '/about',
