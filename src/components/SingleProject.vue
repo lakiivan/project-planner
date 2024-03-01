@@ -19,7 +19,7 @@ export default {
     data() {
         return {
             detailsVisible: false,
-            uri: `http://localhost:3000/projects/` + this.project.id
+            uri: "http://localhost:3000/projects/" + this.project.id
         }
     },
     props: ['project'],
@@ -29,7 +29,7 @@ export default {
             //console.log(this.detailsVisible)
         },
         deleteProject() {
-            fetch(this.uri, {method: 'DELETE',})
+            fetch(this.uri, {method: 'DELETE'})
             .then(() => this.$emit('delete', this.project.id))
             .catch((err) => console.log(err.message))
         }
